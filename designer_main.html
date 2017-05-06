@@ -14,14 +14,14 @@
 <body>
 <!--页面头部-->
  <header>
-    <div class="row clearfix">
+    
 		<div class="col-md-12 column" style="background-color: black">
 			<img src="./img/top.jpg" class="img-responsive" alt="Cinque Terre" />
 		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column" style="background-color: #F2F2F2">
-			<ul class="nav nav-pills " role="tablist">
+	
+	
+		<div class="navbar col-md-12 column" style="background-color: #F2F2F2" role="navigation">
+			<ul class="nav navbar-header nav-pills " role="tablist">
 				<li  id="designer_projects" class="active" role="presentation">
 					 <a href="#">我的项目</a>
 				</li>
@@ -29,21 +29,30 @@
 					 <a href="#">我的任务</a>
 				</li>
 			</ul>
+			<ul class="nav nav-pills navbar-right" role="tablist">
+                <li>
+                    <a href="#"><span id="designer_bell" class="glyphicon glyphicon-bell" style="color:black; font-size: 23px;"></span> </a>
+                </li>
+                <li>
+                    <a href="#"><span id="designer_user" class="glyphicon glyphicon-user" style="color:black; font-size: 23px;"></span></a>
+                </li>
+            </ul>
 		</div>
-	</div>
+	
  </header>
 
     <div id="main">
-    	<div id="main_header" class="row clearfix">
-		   <div class="col-md-12 column" style="background-color: #F2F2F2">
-		   <span class="glyphicon glyphicon-indent-right">主菜单</span>
+    	 
+		   <div id="main_header" class="col-md-12 column nav" style="background-color: #F2F2F2">
+		        <span id="main_menu" class="glyphicon glyphicon-indent-right" style="font-size: 16px"></span>主菜单
+		        <span>项目树</span>
 		   </div>
-	    </div>
-	    <div class="row clearfix">
+	    
+	   
 		<div class="col-md-12 column">
 			<div class="row clearfix">
 				<div class="col-md-1 column" style="background-color: #F2F2F2">
-				</div>
+                </div>
 				<div class="col-md-3 column" style="background-color: #F2F2F2">
 				</div>
 				<div class="col-md-3 column" style="background-color: #F2F2F2">
@@ -55,6 +64,6 @@
 			</div>
 		</div>
 	</div>
-    </div>
+   
 </body>
 </html>

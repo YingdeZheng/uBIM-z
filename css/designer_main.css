@@ -1,7 +1,12 @@
 /*设置背景色*/
 
 
-
+.col-md-12{
+	margin: 2px;
+}   
+.col-md-1,.col-md-2,.col-md-3{
+	margin: 10px;
+}
 .nav li {
     font-size: 18px; //18px 1em = 16px;
     font-family: "STZhongsong";

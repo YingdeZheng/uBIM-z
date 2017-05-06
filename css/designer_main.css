@@ -6,8 +6,17 @@
 }   
 .col-md-1,.col-md-2,.col-md-3{
 	margin: 10px;
+	height: 1000px
 }
 .nav li {
     font-size: 18px; //18px 1em = 16px;
     font-family: "STZhongsong";
+}
+.nav li:active {
+	background-color: #D4D4D4 !important;
+}
+hr {
+	border:0;
+	background-color:#C9C9C9;
+	height:1px;
 }

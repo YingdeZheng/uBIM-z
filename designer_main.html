@@ -6,6 +6,7 @@
     <title>uBIM项目管理系统</title>
     <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+     <script type="text/javascript" src="./js/designer_main.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="./css/designer_main.css">
@@ -14,54 +15,81 @@
 <body>
 <!--页面头部-->
  <header>
-    
+     
 		<div class="col-md-12 column" style="background-color: black">
 			<img src="./img/top.jpg" class="img-responsive" alt="Cinque Terre" />
 		</div>
 	
 	
-		<div class="navbar col-md-12 column" style="background-color: #F2F2F2" role="navigation">
+		<div class="col-md-12" style="background-color: #F2F2F2" >
 			<ul class="nav navbar-header nav-pills " role="tablist">
 				<li  id="designer_projects" class="active" role="presentation">
 					 <a href="#">我的项目</a>
 				</li>
-				<li id="designer_tasks" role="presentation">
+				<li id="designer_tasks" class="" role="presentation">
 					 <a href="#">我的任务</a>
 				</li>
 			</ul>
-			<ul class="nav nav-pills navbar-right" role="tablist">
-                <li>
-                    <a href="#"><span id="designer_bell" class="glyphicon glyphicon-bell" style="color:black; font-size: 23px;"></span> </a>
+			<ul class="nav navbar-right nav-pills " role="tablist">
+                <li id="designer_bell" class="" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-bell" style="color:black; font-size: 23px;"></span> </a>
                 </li>
-                <li>
-                    <a href="#"><span id="designer_user" class="glyphicon glyphicon-user" style="color:black; font-size: 23px;"></span></a>
+                <li id="designer_user" class="" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-user" style="color:black; font-size: 23px;"></span></a>
                 </li>
             </ul>
 		</div>
+	
 	
  </header>
 
     <div id="main">
     	 
-		   <div id="main_header" class="col-md-12 column nav" style="background-color: #F2F2F2">
-		        <span id="main_menu" class="glyphicon glyphicon-indent-right" style="font-size: 16px"></span>主菜单
-		        <span>项目树</span>
-		   </div>
-	    
+    	
+		<div id="main_header" class="col-md-12 column" style="background-color: #F2F2F2" role="navigation">
+		        <ul class="nav navbar-header nav-tabs" role="tablist">
+		            <li  id="main_menu_nav" class="active" role="presentation">
+		               <a href="#"><span class="glyphicon glyphicon-indent-right" style="font-size: 15px">主菜单</span></a>
+		            </li>
+		            <li  id="project_tree" role="presentation">
+		               <a href="#" style="font-size: 16px">项目树</a>
+		            </li>
+		        </ul>
+		        <ul class="nav navbar-right" role="tablist" >
+		            <li id="project_name" > 
+		               <a href="#" style="color:black;font-size: 16px"><<项目名</a>
+		            </li>
+		        </ul>
+		</div>
 	   
 		<div class="col-md-12 column">
 			<div class="row clearfix">
-				<div class="col-md-1 column" style="background-color: #F2F2F2">
+				<div class="col-md-2 column" style="background-color: #F2F2F2;">
+				    <ul id="main_menu" class="nav nav-stacked " style="width: 100%;">
+                        
+                        <li class="active" style="font-size: 15px;"><a href="#">项目进度计划管理</a></li>
+                        <li style="font-size: 15px;"><a href="#">工作流管理</a></li>
+                        <hr>
+                        <li style="font-size: 15px;"><a href="#">查看项目信息</a></li>
+                        <li style="font-size: 15px;"><a href="#">项目公告</a></li>
+                        <hr>
+                        <li style="font-size: 15px;"><a href="#">退出项目</a></li>
+                 
+                    </ul>
                 </div>
 				<div class="col-md-3 column" style="background-color: #F2F2F2">
+				未处理任务：
 				</div>
 				<div class="col-md-3 column" style="background-color: #F2F2F2">
+				正进行任务：
 				</div>
 				<div class="col-md-3 column" style="background-color: #F2F2F2">
+				已完成任务：
 				</div>
-				<div class="col-md-2 column">
+				<div class="col-md-1 column">
+
 				</div>
-			</div>
+		
 		</div>
 	</div>
    

@@ -1,0 +1,124 @@
+ /* 设置背景颜色 */
+ .bg_black {
+ 	background-color: black;
+ }
+
+.bg_gray {
+	background-color: #F2F2F2;
+}
+
+.bg_white {
+	background-color: white;
+}
+
+ /* 设置margin大小 */
+ .mar_15 {
+ 	margin:15px; 
+ }
+
+ .mar_10 {
+ 	margin: 10px;
+ }
+
+ .mar_2 {
+ 	margin: 2px;
+ }
+
+ /* 消息图标的格式 */
+ .bell {
+ 	color:black; font-size: 23px;
+ }
+
+  /* “个人消息”标题的格式 */
+.per_mes {
+	color:black; font-size: 16px;
+}
+
+
+ /* 以下属性水平居中,设置父元素 */
+.hor_center {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+     
+}
+
+/* 以下属性垂直居中,设置span元素 */
+.ver_center {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+/*用户头像图片大小*/
+.per_img_s {
+	height: 60px;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.per_img_l {
+	height:100px;
+	width: 100px;
+}
+
+.form_permes{
+	width: 600px;
+	height: 650px;
+	padding: 9px 16px;
+}
+
+.save_btn {
+	border-color: #3DA8F5;
+    background-color: #3DA8F5;
+    color: white;
+
+    min-width: 120px;
+    padding: 9px 16px;
+    border-radius: 3px;
+
+    line-height: 20px;
+    font-size: 14px;
+
+    display: block;
+    width: 100%;
+}
+
+.upload_perimg{
+	/*position: absolute;*/
+    top: 30%;
+    left: 35%;
+}
+
+.font_em {
+	font-weight: bold;
+}
+
+.left_menu {
+	width: 250px;
+	margin-top: 20px;
+}
+
+.card {
+	width: 250px;
+	height: 100px;
+}
+
+.card_img {
+}
+
+.card_name {
+	font-size: 18px;
+    font-weight: 600;
+}
+
+.card_des {
+	max-width:160px;
+    color: grey;
+}
+.nav li {
+    font-size: 18px; //18px 1em = 16px;
+    font-family: "STZhongsong";
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	    <title>uBIM项目管理系统</title>
+	       <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+	       <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+	       <script type="text/javascript" src="./js/designer_main.js"></script>
+
+	       <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	       <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	       <link rel="stylesheet" type="text/css" href="./css/designer_user.css">
+</head>
+<!--页面头部-->
+ <header>
+     
+		<div class="col-md-12 column bg_black mar_2" ">
+			<img src="./img/top.jpg" class="img-responsive" alt="Cinque Terre" />
+		</div>
+	
+	
+		<div class="col-md-12 bg_gray mar_2" >
+			<ul class="nav navbar-header nav-pills " role="tablist">
+				<li  id="designer_projects" class="" role="presentation">
+					 <a href="#">我的项目</a>
+				</li>
+				<li id="designer_tasks" class="" role="presentation">
+					 <a href="#">我的任务</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-right nav-pills " role="tablist">
+                <li id="designer_bell" class="" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-bell bell" ></span> </a>
+                </li>
+                <li id="designer_user" class="active" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-user bell" ></span></a>
+                </li>
+            </ul>
+		</div>
+
+		<!-- 二级菜单栏 -->
+		<div id="main_header" class="col-md-12 column hor_center bg_gray mar_2" role="navigation">
+		    <span class="glyphicon glyphicon-user ver_center per_mes">个人信息</span>
+		        <ul class="nav navbar-right user" role="tablist" >
+		            <li id="project_name" > 
+		               <a href="#" class="per_mes" "><<项目名</a>
+		            </li>
+		        </ul>
+		</div>
+
+		<!--个人信息三部分-->
+	<div class="container;" >
+	  <div class="col-md-12 column bg_gray mar_2">
+		<div class="col-md-2 column mar_10" ></div>
+		<div class="col-md-3 column mar_10" >
+		    <div class="bg_white card">
+		    	<img src="./img/man-1.png" class="img-circle per_img_s card_img">
+		    	<span class="card_name">XXX</span>
+		    	<span class="card_des">123456789@gmail.com</span>
+		    </div>
+
+            <div class="">
+			<ul class="list-unstyled nav bg_white left_menu" >
+				<li>
+					<a href="#">个人信息</a>
+				</li>
+				<li>
+					<a href="#">账号密码</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="col-md-6 column bg_white mar_10 form_permes" >
+		    <span class="mar_2 font_em">个人信息</span>
+			<form class="form-horizontal mar_15" role="form" >
+				<div class="form-group">
+				    <img src="./img/man-1.png" class="img-circle  per_img_l"">					 <label for="person_img" class="col-sm-2 control-label">头像</label>
+					<div class="col-sm-10 upload_perimg">
+						<input type="file" class=""  id="person_img" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputName" class="col-sm-2 control-label">姓名</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputName" placeholder="请输入中文姓名" />
+					</div>
+				</div>
+				<div class="form-group">
+                        <label class="col-sm-2 control-label">性别</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="emp_sex" id="emp_male" value="男">男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="emp_sex" id="emp_female" value="男">女
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="emp_sex" id="emp_other" value="保密">保密
+                            </label>
+                        </div>
+                    </div>
+                <div class="form-group">
+                        <label for="emp_birth" class="col-sm-2 control-label ">生日</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control birth" name="emp_birth" id="emp_birth" placeholder="1995-01-22">
+                        </div>
+                    </div>
+                <div class="form-group">
+                        <label for="tel" class="col-sm-2 control-label">联系方式</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="tel" id="tel" placeholder="12345678985">
+                        </div>
+                    </div>
+                 <div class="form-group">
+                        <label for="title" class="col-sm-2 control-label">职称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="title" id="title" placeholder="学生">
+                        </div>
+                    </div>
+                <div class="form-group">
+                        <label for="dep_name" class="col-sm-2 control-label">部门</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="dep_name" id="dep_name" placeholder="开发部">
+                        </div>
+                    </div>
+                 <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">邮箱</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="1234567895@qq.com">
+                        </div>
+                    </div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						 <button type="submit" class="btn btn-default save_btn">保存</button>
+					</div>
+				</div>
+			</form>
+		  </div>
+
+		  <div class="col-md-2 column mar_10"></div>
+	   
+	    </div>
+	</div>
+
+ </header>
+
+<body>
+
+</body>
+</html>
